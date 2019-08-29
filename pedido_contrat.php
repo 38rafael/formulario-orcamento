@@ -1,23 +1,3 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<style type="text/css">
-	.container{
-		background-color:#CEF6D8;
-		padding-bottom: 10%;
-		
-		
-	}
-	a{
-		font-size: 20px;
-		border: 1px solid;
-		padding: 4px;
-		background-color: #D8D8D8;
-		margin-top: 20px;
-	}
-
-</style>
 <?php
 require 'config.php';
 
@@ -44,28 +24,24 @@ if(isset($_POST['domin_empresa']) && !empty($_POST['domin_empresa'])){
 
 
 ?>
-<div class="container">
-	<div class="col-sn">
-		
-		<h3>
-		<p>Aqui você irá descrever o que deseja para seu prejeto!</p>
-		</h3>
-		<form method="POST">
-			Qual é o tipo de site que vc quer?
-			<input type="text" name="tipo_site"><br/><br/>			
-        	Descreva abaixo os pontos que mais te atraem:
-        	<input type="text" name="desc_site"><br/><br/>  
-			Modelo de site (URL):
-			<input type="text" name="mod_site"><br><br>
-			Insira o Dominio da sua Empresa:
-			<input type="text" name="domin_empresa"><br><br>
-			Qual é a cidade que sua empresa está localizada?
-			<input type="text" name="cidade_empresa"><br/><br/>
-			Insira o Dominio de site concorrentes que você gostaria que o seu acompanhasse<br> e as tendências, informe o que mais chama sua atenção:
-			<input type="text" name="concorrentes"><br><br>
-			<input type="submit" value="Enviar">
 
-		</form>
-		<a href="index.php" id= "menu">Sair</a></br></br>
-	</div>
-</div>
+<h3>
+<p>Aqui você irá descrever o que deseja para seu prejeto!</p>
+</h3>
+<form method="POST">
+	Qual é o tipo de site que vc quer?
+	<input type="text" name="tipo_site"><br/><br/>			
+	Descreva abaixo os pontos que mais te atraem:
+	<input type="text" name="desc_site"><br/><br/>  
+	Modelo de site (URL):
+	<input type="text" name="mod_site"><br><br>
+	Insira o Dominio da sua Empresa:
+	<input type="text" name="domin_empresa"><br><br>
+	Qual é a cidade que sua empresa está localizada?
+	<input type="text" name="cidade_empresa"><br/><br/>
+	Insira o Dominio de site concorrentes que você gostaria que o seu acompanhasse<br> e as tendências, informe o que mais chama sua atenção:
+	<input type="text" name="concorrentes"><br><br>
+	<input type="submit" value="Enviar">
+
+</form>
+<a href="index.php" id= "menu">Sair</a></br></br>
